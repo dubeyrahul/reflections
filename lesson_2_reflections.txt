@@ -1,0 +1,6 @@
+What happens when you initialize a repository? Why do you need to do it?
+When I initialize the git repository, it converts a normal directory to a git repository, which now can be version-controlled. It creates a .git folder with all the metadata required. Although, init command doesn't track the files yet.
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+Working directory is there on my local machine from where I pick up files that I want to track and put it in the staging area. It allows me to have flexibility and control over what files (if not all) I want to track using version control. It is acrually quite a cool concept.
+
