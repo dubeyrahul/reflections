@@ -4,3 +4,17 @@ When I initialize the git repository, it converts a normal directory to a git re
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 Working directory is there on my local machine from where I pick up files that I want to track and put it in the staging area. It allows me to have flexibility and control over what files (if not all) I want to track using version control. It is acrually quite a cool concept.
 
+How can you use the staging area to make sure you have one commit per logical change?
+As I keep making a logical change, I can add it to the staging area, compare it with working directory and repository and then create a commit.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches would be really helpful if I want to try out an experimental feature without disturbing my working demo code. I can work on both code bases simultaneously switching between the two flexibly.
+
+How do the diagrams help you visualize the branch structure?
+It helps me see where the branches are created and if there are any unreachable commits then I should make a branch there(if I need those commits later). I also learned the command git -b checkout new_branch_name which is quite useful.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Merging two branches helps us combine two logical components together into a single component. It allows different people to work in collaboration. The diagram allows us to visualize the parents of those branches which is used to merge these branches properly.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Git's automatic merging is kind of a safe merging technique. It merges automatically when the file changes are not seemingly logically connected, but if there is any chance that they are, then it raises a conflict, which is good, because it lets the user handle the conflict and be aware of it.
