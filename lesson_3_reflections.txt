@@ -12,3 +12,10 @@ It is good to have the last known state of the remote stored locally because the
 
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 I guess it would be easier if I am working alone on a simple project with a couple of features. But as things become massive and complicated, I will need a version-control system. Moreover, if I am collaborating then not using git would be disastrous as the work would have to go linearly and not in parallel.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+Making changes in a separate branch is good when I am working on an experimental feature that I want to get reviewed by someone before merging it with the master branch. Because this could break the master branch, it is better to get it reviewed by someone. On the other hand, if I am fixing a normal bug on the master branch that is going to stay as the "production code", then I might as well stick to the master branch. Adding this workflow so that I remember:
+"""
+Rather than simply pulling and pushing, you need to pull changes into your local master branch, merge the local master into your branch (different-oil, in our case), then push your branch to the remote before finally merging your branch into master, either locally or on GitHub.
+"""
+
